@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f7f9fb;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-fixed": "#131b2e", "tertiary-fixed": "#89f5e7", "on-error": "#ffffff", "surface": "#f7f9fb", "tertiary": "#000000", "on-surface": "#191c1e", "on-tertiary-container": "#0c9488", "inverse-surface": "#2d3133", "on-primary-fixed-variant": "#3f465c", "secondary-fixed-dim": "#ffb95f", "tertiary-fixed-dim": "#6bd8cb", "on-primary": "#ffffff", "secondary": "#855300", "on-secondary-fixed-variant": "#653e00", "outline-variant": "#c6c6cd", "on-error-container": "#93000a", "on-background": "#191c1e", "on-tertiary": "#ffffff", "primary-container": "#131b2e", "secondary-container": "#fea619", "surface-tint": "#565e74", "error-container": "#ffdad6", "surface-bright": "#f7f9fb", "surface-container-lowest": "#ffffff", "on-surface-variant": "#45464d", "on-secondary": "#ffffff", "outline": "#76777d", "surface-container-high": "#e6e8ea", "background": "#f7f9fb", "secondary-fixed": "#ffddb8", "surface-container-highest": "#e0e3e5", "error": "#ba1a1a", "on-primary-container": "#7c839b", "on-tertiary-fixed-variant": "#005049", "primary": "#000000", "surface-dim": "#d8dadc", "tertiary-container": "#00201d", "on-secondary-container": "#684000", "surface-container": "#eceef0", "primary-fixed": "dae2fd", "inverse-on-surface": "#eff1f3", "on-secondary-fixed": "#2a1700", "surface-variant": "#e0e3e5", "on-tertiary-fixed": "#00201d", "primary-fixed-dim": "#bec6e0", "inverse-primary": "#bec6e0", "surface-container-low": "#f2f4f6" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1.5rem", "margin": "2rem", "space-md": "1rem", "margin-mobile": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xl": "2rem", "gutter-mobile": "1rem", "space-xs": "0.25rem" }, fontFamily: { "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "code-sm": ["Space Grotesk"] }, fontSize: { "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "display-lg": ["48px", { "lineHeight": "56px", "fontWeight": "700" }], "headline-xl": ["36px", { "lineHeight": "44px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-xl-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "code-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }] } } } }</script></head><body class="bg-surface text-on-surface flex flex-col min-h-screen antialiased selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Exit Quiz" class="w-11 h-11 min-w-[44px] min-h-[44px] rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container active:scale-95 transition-transform" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[20px]">close</span></button><img alt="Growly edtech logo, minimalist modern emblem of an open knowledge book seamlessly morphing into a rising geometric sprout or glowing intellect node, deep navy blue and warm golden saffron accent, vector flat icon symbol" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XpZbL0Yv1d-T25dDldGPoTxi8m-nL5QrkWzztNn3E_f_A6P1h06cR1vgDrrHgG23cN1STymqZ0ay2G5ioDz2nE4PfHoh1eKeJY1I9gq9og3D_J1WQbJyMWsN-1cVF2M9G_G-dtvV020iS_D7KhKj2FO04dnCxi4wIMcUZWIqhNaTqWmr3N6O8bzj-FYmofmdqGnnHqPSxBD7A_VPRI120qyEDs36iR3ct5XpJHIUbDVi7bRIWDY8PvgWM"/><div class="flex flex-col ml-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Growly Focus</span><h1 class="font-headline-sm text-headline-sm text-on-surface leading-tight truncate max-w-[160px]">Active Practice Quiz</h1></div></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 px-margin-mobile pb-safe bg-surface"><div class="flex flex-col w-full pb-6 space-y-space-md">
+<!-- Top Context Subheader -->
+<section class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs bg-secondary-fixed/50 px-2 py-1 rounded-full">
+<span class="material-symbols-outlined text-secondary text-[16px]">bolt</span>
+<span class="font-label-sm text-label-sm text-on-secondary-fixed font-semibold tracking-wide">ADAPTIVE LVL 3 · ADVANCED</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-low px-2.5 py-1 rounded-full text-on-surface-variant font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">timer</span>
+<span class="font-semibold text-on-surface" id="quiz-timer">14:18</span>
+<button aria-label="Pause timer" class="ml-1 text-on-surface-variant hover:text-on-surface transition-colors flex items-center" id="pause-btn" type="button">
+<span class="material-symbols-outlined text-[15px]" id="pause-icon">pause_circle</span>
+</button>
+</div>
+</div>
+<div class="flex items-baseline justify-between mt-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate max-w-[210px]">CS 301 • Deadlocks • Banker's Algo</span>
+<span class="font-label-md text-label-md text-secondary font-bold">Q7 <span class="text-on-surface-variant font-normal">of 15</span></span>
+</div>
+<!-- Micro Stepper & Progress Bar -->
+<div class="flex flex-col gap-1.5 pt-1">
+<div class="flex items-center justify-between px-0.5">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container shadow-sm"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-high"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-high"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-high"></span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">46% Complete</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 46%;"></div>
+</div>
+</div>
+</section>
+<!-- Main Question Card -->
+<article class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-md">
+<!-- Header Badges -->
+<div class="flex items-center justify-between flex-wrap gap-space-xs">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface font-medium">Multi-Resource Safety</span>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Exam Priority
+      </span>
+</div>
+<!-- Question Prompt -->
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+      Given a system with 5 processes (<span class="font-code-sm text-code-sm bg-surface-container px-1 py-0.5 rounded text-on-surface">P0–P4</span>) and 3 resource types (<span class="font-code-sm text-code-sm bg-surface-container px-1 py-0.5 rounded text-on-surface">A:10, B:5, C:7</span>). If process <strong class="text-on-surface font-semibold">P1</strong> issues request <code class="font-code-sm text-code-sm text-secondary bg-secondary-fixed/40 px-1 py-0.5 rounded font-bold">(1, 0, 2)</code>, will the system remain in a safe state according to the Banker's Algorithm?
+    </p>
+<!-- Data Matrix Snapshot -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">System State Snapshot</span>
+<span class="font-code-sm text-code-sm text-on-tertiary-container bg-surface-container-lowest px-1.5 py-0.5 rounded font-semibold">Available = [3, 3, 2]</span>
+</div>
+<!-- Matrix Compact Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-code-sm text-code-sm text-on-surface">
+<thead>
+<tr class="text-on-surface-variant text-[11px] uppercase bg-surface-container-high/60 rounded">
+<th class="py-1 px-2 font-medium">Proc</th>
+<th class="py-1 px-2 font-medium">Alloc (A B C)</th>
+<th class="py-1 px-2 font-medium">Max (A B C)</th>
+<th class="py-1 px-2 font-medium">Need (A B C)</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr class="hover:bg-surface-container/50">
+<td class="py-1 px-2 font-semibold">P0</td>
+<td class="py-1 px-2 text-on-surface-variant">0 1 0</td>
+<td class="py-1 px-2 text-on-surface-variant">7 5 3</td>
+<td class="py-1 px-2 text-on-surface">7 4 3</td>
+</tr>
+<tr class="bg-secondary-fixed/20 font-medium">
+<td class="py-1 px-2 text-secondary font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>P1
+              </td>
+<td class="py-1 px-2 text-on-surface">2 0 0</td>
+<td class="py-1 px-2 text-on-surface">3 2 2</td>
+<td class="py-1 px-2 text-secondary font-bold">1 2 2</td>
+</tr>
+<tr class="hover:bg-surface-container/50">
+<td class="py-1 px-2 font-semibold">P2</td>
+<td class="py-1 px-2 text-on-surface-variant">3 0 2</td>
+<td class="py-1 px-2 text-on-surface-variant">9 0 2</td>
+<td class="py-1 px-2 text-on-surface">6 0 0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Collapsible Conceptual Hint -->
+<div class="flex flex-col">
+<button class="self-start flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high transition-all active:scale-95" id="hint-toggle-btn" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">lightbulb</span>
+<span class="font-label-sm text-label-sm">Need a conceptual hint? <span class="text-on-surface-variant font-normal">(-10 XP)</span></span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant transition-transform" id="hint-chevron">expand_more</span>
+</button>
+<div class="hidden mt-2 p-3 bg-secondary-fixed/20 rounded-lg text-on-secondary-fixed font-body-sm text-body-sm shadow-sm" id="hint-content">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">psychology</span>
+<p>Banker's rule: First check if <code class="font-code-sm text-code-sm bg-surface-container-lowest px-1 py-0.5 rounded">Request ≤ Need</code> and <code class="font-code-sm text-code-sm bg-surface-container-lowest px-1 py-0.5 rounded">Request ≤ Available</code>. If valid, temporarily simulate allocation and derive if any permutation satisfies subsequent safety.</p>
+</div>
+</div>
+</div>
+</article>
+<!-- Interactive Multiple Choice Options -->
+<section aria-label="Multiple choice answers" class="flex flex-col gap-space-xs" id="mcq-group" role="radiogroup">
+<!-- Option A (Selected Default state) -->
+<button aria-checked="true" class="mcq-option w-full text-left p-space-sm rounded-xl bg-primary-container text-on-primary shadow-sm flex items-start gap-space-sm transition-all transform active:scale-[0.99]" data-option="A" role="radio" type="button">
+<div class="w-6 h-6 rounded-full bg-on-primary text-primary flex items-center justify-center font-label-md text-label-md shrink-0 mt-0.5 font-bold">
+<span class="material-symbols-outlined text-[16px] text-primary">check</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1 mb-0.5">
+<span class="font-label-sm text-label-sm text-on-primary-container font-semibold uppercase">Option A</span>
+</div>
+<p class="font-body-md text-body-md text-on-primary leading-snug">
+          Yes, because a safe sequence <code class="font-code-sm text-code-sm bg-white/10 px-1 py-0.5 rounded font-bold text-tertiary-fixed">&lt;P1, P3, P4, P0, P2&gt;</code> exists with remaining available resources.
+        </p>
+</div>
+</button>
+<!-- Option B -->
+<button aria-checked="false" class="mcq-option w-full text-left p-space-sm rounded-xl bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-low transition-all transform active:scale-[0.99] flex items-start gap-space-sm" data-option="B" role="radio" type="button">
+<div class="w-6 h-6 rounded-full bg-surface-container text-on-surface flex items-center justify-center font-label-md text-label-md shrink-0 mt-0.5 font-bold">
+        B
+      </div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1 mb-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase">Option B</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-snug">
+          No, granting the request leads to an immediate unsafe state with insufficient Available resources for P3.
+        </p>
+</div>
+</button>
+<!-- Option C -->
+<button aria-checked="false" class="mcq-option w-full text-left p-space-sm rounded-xl bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-low transition-all transform active:scale-[0.99] flex items-start gap-space-sm" data-option="C" role="radio" type="button">
+<div class="w-6 h-6 rounded-full bg-surface-container text-on-surface flex items-center justify-center font-label-md text-label-md shrink-0 mt-0.5 font-bold">
+        C
+      </div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1 mb-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase">Option C</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-snug">
+          No, although resources are available, circular wait is triggered between P1 and P2 during execution.
+        </p>
+</div>
+</button>
+<!-- Option D -->
+<button aria-checked="false" class="mcq-option w-full text-left p-space-sm rounded-xl bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-low transition-all transform active:scale-[0.99] flex items-start gap-space-sm" data-option="D" role="radio" type="button">
+<div class="w-6 h-6 rounded-full bg-surface-container text-on-surface flex items-center justify-center font-label-md text-label-md shrink-0 mt-0.5 font-bold">
+        D
+      </div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1 mb-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase">Option D</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-snug">
+          Yes, but only if P4 releases its instances of Resource B preemptively prior to the allocation check.
+        </p>
+</div>
+</button>
+</section>
+<!-- Real-time Cognitive Assistant Tray -->
+<section class="flex items-center justify-between gap-space-xs pt-1">
+<button class="flex-1 py-2 px-3 rounded-lg bg-secondary-fixed/50 hover:bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center gap-1.5 shadow-sm transition-all active:scale-95" id="copilot-action-btn" type="button">
+<span class="material-symbols-outlined text-secondary text-[18px]">auto_awesome</span>
+<span class="font-label-sm text-label-sm font-semibold truncate">Ask Growly Copilot</span>
+</button>
+<button class="py-2 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center gap-1.5 shadow-sm transition-all active:scale-95" id="flag-btn" type="button">
+<span class="material-symbols-outlined text-[18px]" id="flag-icon">bookmark_border</span>
+<span class="font-label-sm text-label-sm font-medium" id="flag-label">Review</span>
+</button>
+</section>
+<!-- AI Socratic Drawer (Interactive Hidden by default) -->
+<div class="hidden p-space-sm bg-surface-container-lowest rounded-xl shadow-md flex flex-col gap-space-xs" id="ai-drawer">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-secondary font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[18px]">psychology_alt</span>
+        Socratic Guide
+      </div>
+<button class="text-on-surface-variant hover:text-on-surface p-1" id="ai-close-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+      "Look at the new Available vector if P1 is given <span class="font-code-sm text-code-sm text-on-surface bg-surface-container px-1 py-0.5 rounded">(1,0,2)</span>: Available becomes <span class="font-code-sm text-code-sm text-on-surface font-semibold">[2, 3, 0]</span>. Which process's Need can be fulfilled next?"
+    </p>
+</div>
+<!-- Sticky Bottom Action Footer -->
+<section class="pt-2 flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<button class="px-4 py-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+        Prev
+      </button>
+<button class="flex-1 py-3 px-space-md rounded-lg bg-primary hover:bg-surface-tint text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 shadow-md active:scale-95 transition-all" id="submit-next-btn" type="button">
+<span class="font-bold tracking-wide">Submit &amp; Next</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+<span class="bg-surface-container-highest/20 font-code-sm text-code-sm px-1.5 py-0.5 rounded text-on-primary opacity-80 hidden sm:inline-block">(Enter)</span>
+</button>
+</div>
+<!-- Footnote Meta -->
+<div class="flex items-center justify-center gap-1 text-center py-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">trending_up</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Adaptive Engine: Correct response advances Q8 to Final Exam Tier</span>
+</div>
+</section>
+</div>
+<script>
+  (function () {
+    // MCQ selection logic
+    const options = document.querySelectorAll('.mcq-option');
+    options.forEach((opt) => {
+      opt.addEventListener('click', () => {
+        options.forEach((el) => {
+          el.setAttribute('aria-checked', 'false');
+          el.className = 'mcq-option w-full text-left p-space-sm rounded-xl bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-low transition-all transform active:scale-[0.99] flex items-start gap-space-sm';
+          const badge = el.querySelector('div:first-child');
+          const code = el.getAttribute('data-option');
+          badge.className = 'w-6 h-6 rounded-full bg-surface-container text-on-surface flex items-center justify-center font-label-md text-label-md shrink-0 mt-0.5 font-bold';
+          badge.textContent = code;
+          const optLabel = el.querySelector('span.uppercase');
+          if (optLabel) {
+            optLabel.className = 'font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase';
+          }
+        });
+
+        opt.setAttribute('aria-checked', 'true');
+        opt.className = 'mcq-option w-full text-left p-space-sm rounded-xl bg-primary-container text-on-primary shadow-sm flex items-start gap-space-sm transition-all transform active:scale-[0.99]';
+        const badge = opt.querySelector('div:first-child');
+        badge.className = 'w-6 h-6 rounded-full bg-on-primary text-primary flex items-center justify-center font-label-md text-label-md shrink-0 mt-0.5 font-bold';
+        badge.innerHTML = '<span class="material-symbols-outlined text-[16px] text-primary">check</span>';
+        const optLabel = opt.querySelector('span.uppercase');
+        if (optLabel) {
+          optLabel.className = 'font-label-sm text-label-sm text-on-primary-container font-semibold uppercase';
+        }
+      });
+    });
+
+    // Conceptual Hint toggle
+    const hintBtn = document.getElementById('hint-toggle-btn');
+    const hintContent = document.getElementById('hint-content');
+    const hintChevron = document.getElementById('hint-chevron');
+    if (hintBtn && hintContent && hintChevron) {
+      hintBtn.addEventListener('click', () => {
+        const isHidden = hintContent.classList.contains('hidden');
+        if (isHidden) {
+          hintContent.classList.remove('hidden');
+          hintChevron.style.transform = 'rotate(180deg)';
+        } else {
+          hintContent.classList.add('hidden');
+          hintChevron.style.transform = 'rotate(0deg)';
+        }
+      });
+    }
+
+    // Timer pause / resume simulation
+    const pauseBtn = document.getElementById('pause-btn');
+    const pauseIcon = document.getElementById('pause-icon');
+    let isPaused = false;
+    if (pauseBtn && pauseIcon) {
+      pauseBtn.addEventListener('click', () => {
+        isPaused = !isPaused;
+        pauseIcon.textContent = isPaused ? 'play_circle' : 'pause_circle';
+      });
+    }
+
+    // Bookmark / Review flag toggle
+    const flagBtn = document.getElementById('flag-btn');
+    const flagIcon = document.getElementById('flag-icon');
+    const flagLabel = document.getElementById('flag-label');
+    let isFlagged = false;
+    if (flagBtn && flagIcon && flagLabel) {
+      flagBtn.addEventListener('click', () => {
+        isFlagged = !isFlagged;
+        if (isFlagged) {
+          flagIcon.textContent = 'bookmark';
+          flagIcon.style.fontVariationSettings = "'FILL' 1";
+          flagLabel.textContent = 'Flagged';
+          flagBtn.classList.add('bg-secondary-fixed/50', 'text-on-secondary-fixed');
+          flagBtn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        } else {
+          flagIcon.textContent = 'bookmark_border';
+          flagIcon.style.fontVariationSettings = "'FILL' 0";
+          flagLabel.textContent = 'Review';
+          flagBtn.classList.remove('bg-secondary-fixed/50', 'text-on-secondary-fixed');
+          flagBtn.classList.add('bg-surface-container', 'text-on-surface-variant');
+        }
+      });
+    }
+
+    // AI Drawer toggle
+    const copilotBtn = document.getElementById('copilot-action-btn');
+    const aiDrawer = document.getElementById('ai-drawer');
+    const aiCloseBtn = document.getElementById('ai-close-btn');
+    if (copilotBtn && aiDrawer && aiCloseBtn) {
+      copilotBtn.addEventListener('click', () => {
+        aiDrawer.classList.toggle('hidden');
+      });
+      aiCloseBtn.addEventListener('click', () => {
+        aiDrawer.classList.add('hidden');
+      });
+    }
+
+    // Submit micro-feedback
+    const submitBtn = document.getElementById('submit-next-btn');
+    if (submitBtn) {
+      submitBtn.addEventListener('click', () => {
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">progress_activity</span> Analyzing...';
+        setTimeout(() => {
+          submitBtn.innerHTML = originalText;
+        }, 800);
+      });
+    }
+  })();
+</script></main></body></html>

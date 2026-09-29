@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-fixed": "#00201d", "on-error-container": "#93000a", "on-tertiary": "#ffffff", "surface-container-low": "#f2f4f6", "inverse-primary": "#bec6e0", "secondary-container": "#fea619", "surface-container-high": "#e6e8ea", "tertiary": "#000000", "on-primary-fixed-variant": "#3f465c", "surface-container-lowest": "#ffffff", "on-background": "#191c1e", "on-error": "#ffffff", "primary-fixed-dim": "#bec6e0", "on-primary-fixed": "#131b2e", "surface-tint": "#565e74", "on-secondary": "#ffffff", "tertiary-container": "#00201d", "on-secondary-container": "#684000", "secondary-fixed": "#ffddb8", "on-surface-variant": "#45464d", "surface": "#f7f9fb", "surface-dim": "#d8dadc", "on-surface": "#191c1e", "surface-variant": "#e0e3e5", "primary-fixed": "#dae2fd", "secondary-fixed-dim": "#ffb95f", "surface-container": "#eceef0", "secondary": "#855300", "on-tertiary-container": "#0c9488", "error-container": "#ffdad6", "surface-bright": "#f7f9fb", "error": "#ba1a1a", "background": "#f7f9fb", "outline-variant": "#c6c6cd", "on-primary": "#ffffff", "primary-container": "#131b2e", "tertiary-fixed": "#89f5e7", "outline": "#76777d", "on-primary-container": "#7c839b", "tertiary-fixed-dim": "#6bd8cb", "primary": "#000000", "inverse-surface": "#2d3133", "on-secondary-fixed": "#2a1700", "surface-container-highest": "#e0e3e5", "inverse-on-surface": "#eff1f3", "on-tertiary-fixed-variant": "#005049", "on-secondary-fixed-variant": "#653e00" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "2rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "space-md": "1rem", "space-xl": "2rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "margin-mobile": "1rem", "space-xs": "0.25rem" }, fontFamily: { "label-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "code-sm": ["Space Grotesk"], "headline-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"] }, fontSize: { "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "display-lg": ["48px", { "lineHeight": "56px", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-xl": ["36px", { "lineHeight": "44px", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "500" }], "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "600" }], "headline-xl-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "code-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen flex flex-col antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVI-UUjoH_ltEchJAu9UdaFW7IIbJVezXyseNe5bLFDB0r08euVzbu4Bb46rON_ytkXcHqP615sIafEQG9PO-Zj72RE7dJl5XOf8qUHwJ6cS11ACbE0CLk-qWyfe2HQxtLQkWsKTp57-zYAdQ6exeXtdTH7_V7X25oWhvKtba4mtt9NGjgzmwVvrfRKw7TOuqSpIND4oqHJuMkFipBr9KtoHQ4ZshrZVNNmLPh1wcarCw7GMLGOr1mSw"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface leading-none">Growly</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-1">Dashboard</span></div></div><div class="flex items-center gap-space-xs"><div class="flex items-center gap-1 bg-secondary-fixed/50 px-2.5 py-1 rounded-full shadow-[0_0_0_1px_rgba(245,158,11,0.25)]"><span class="material-symbols-outlined text-secondary text-[18px]">local_fire_department</span><span class="font-label-md text-label-md text-on-secondary-container font-bold">12d</span></div><button aria-label="Search" class="w-11 h-11 flex items-center justify-center rounded-xl text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-xl text-on-surface-variant hover:text-on-surface transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary-container"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface flex-grow"><div class="flex flex-col w-full">
+<div class="px-gutter-mobile pt-space-md pb-space-xs flex flex-col">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface tracking-tight">Good morning, Aryan 👋</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Here’s what your learning looks like today.</p>
+</div>
+<button aria-label="Quick focus timer" class="w-10 h-10 rounded-full bg-secondary-fixed/40 flex items-center justify-center text-on-secondary-container transition-transform active:scale-95 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">timer</span>
+</button>
+</div>
+</div>
+<div class="px-gutter-mobile mt-space-md grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Study Time</span>
+<svg class="w-7 h-7 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-secondary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="75, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+</div>
+<div class="mt-space-sm">
+<span class="font-headline-md text-headline-md text-on-surface tracking-tight leading-none block">2h 15m</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1 block">Goal: 3h (75%)</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Current Streak</span>
+<span class="material-symbols-outlined text-secondary text-[22px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-on-surface tracking-tight leading-none">12</span>
+<span class="font-label-md text-label-md text-secondary font-bold">Days</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary mt-1 block font-medium">🔥 Personal best!</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Questions</span>
+<span class="material-symbols-outlined text-on-tertiary-container text-[20px]">fact_check</span>
+</div>
+<div class="mt-space-sm">
+<span class="font-headline-md text-headline-md text-on-surface tracking-tight leading-none block">48 <span class="text-on-surface-variant font-body-sm text-body-sm font-normal">/ 60</span></span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container mt-1 block font-medium">+14 today</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Overall Mastery</span>
+<span class="material-symbols-outlined text-primary text-[20px]">workspace_premium</span>
+</div>
+<div class="mt-space-sm">
+<span class="font-headline-md text-headline-md text-on-surface tracking-tight leading-none block">82%</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container mt-1 flex items-center gap-0.5 font-medium">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> 4% this week
+        </span>
+</div>
+</div>
+</div>
+<div class="px-gutter-mobile mt-space-md">
+<div class="bg-gradient-to-r from-primary-container to-[#1a233b] text-on-primary rounded-xl p-space-md shadow-md relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-secondary-container/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-1.5 bg-surface-container-lowest/15 backdrop-blur-md px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-secondary-fixed text-[14px]">alarm</span>
+<span class="font-label-sm text-label-sm text-surface-bright tracking-wide uppercase">Urgent Review</span>
+</div>
+<div class="flex items-center gap-1 text-secondary-fixed">
+<span class="material-symbols-outlined text-[15px]">event</span>
+<span class="font-label-sm text-label-sm font-bold">4 days left</span>
+</div>
+</div>
+<div class="mt-1 flex flex-col">
+<span class="font-headline-sm text-headline-sm text-surface-bright font-bold">Operating Systems Midterm</span>
+<div class="flex items-center justify-between mt-2">
+<span class="font-body-sm text-body-sm text-primary-fixed-dim">Preparedness Readiness</span>
+<span class="font-label-md text-label-md font-bold text-surface-bright">78%</span>
+</div>
+<div class="w-full bg-surface-container-lowest/20 h-2 rounded-full mt-1.5 overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 78%;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="px-gutter-mobile mt-space-lg">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed/50 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-snug">What should I study today?</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Spaced repetition algorithmic suggestions</p>
+</div>
+</div>
+</div>
+<div class="mt-space-md flex flex-col gap-space-xs">
+<div class="bg-error-container/30 p-2.5 rounded-lg flex items-start gap-2.5">
+<span class="w-2.5 h-2.5 rounded-full bg-error mt-1 flex-shrink-0 animate-pulse"></span>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface truncate">Deadlocks (Operating Systems)</span>
+<span class="font-label-sm text-label-sm text-error font-semibold flex-shrink-0">15 Qs</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Low accuracy (54%) · Midterm in 4 days</p>
+</div>
+</div>
+<div class="bg-secondary-fixed/30 p-2.5 rounded-lg flex items-start gap-2.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary mt-1 flex-shrink-0"></span>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface truncate">CPU Scheduling Algorithms</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex-shrink-0">10 cards</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Due for memory consolidation review</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex items-start gap-2.5">
+<span class="w-2.5 h-2.5 rounded-full bg-on-tertiary-container mt-1 flex-shrink-0"></span>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface truncate">Process States &amp; PCB</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-semibold flex-shrink-0">5m recap</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Confidence steady (92%) · Quick refresher</p>
+</div>
+</div>
+</div>
+<div class="mt-space-md">
+<button class="w-full bg-primary text-on-primary py-3 rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md active:scale-[0.98] transition-transform relative overflow-hidden" id="start-revision-btn" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary-container" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+<span>Start Daily Revision (25m)</span>
+<span class="absolute right-4 w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+</button>
+</div>
+</div>
+</div>
+<div class="mt-space-lg">
+<div class="px-gutter-mobile flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-1.5">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Continue Learning</h2>
+<span class="font-label-sm text-label-sm bg-surface-container-high px-2 py-0.5 rounded-full text-on-surface-variant">3 Active</span>
+</div>
+<button class="font-label-md text-label-md text-secondary hover:underline flex items-center" type="button">
+        See All
+      </button>
+</div>
+<div class="flex gap-space-sm overflow-x-auto px-gutter-mobile pb-space-xs no-scrollbar">
+<div class="min-w-[260px] max-w-[260px] bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between flex-shrink-0">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm bg-secondary-fixed/50 text-on-secondary-container px-2 py-0.5 rounded-full font-bold">CS 301</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">76%</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface line-clamp-1">Operating Systems</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Paging, TLB Translation &amp; Virtual Memory models.</p>
+</div>
+<div class="mt-space-md pt-space-xs">
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden mb-space-sm">
+<div class="bg-primary h-full rounded-full" style="width: 76%;"></div>
+</div>
+<button class="w-full bg-surface-container-low hover:bg-surface-container text-on-surface py-2 rounded-lg font-label-sm text-label-sm flex items-center justify-center gap-1 transition-colors" type="button">
+<span>Continue → Memory</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="min-w-[260px] max-w-[260px] bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between flex-shrink-0">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded-full font-bold">CS 304</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-tertiary-container">88%</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface line-clamp-1">Database Systems</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Normalization 3NF, BCNF &amp; B+ Tree indices storage.</p>
+</div>
+<div class="mt-space-md pt-space-xs">
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden mb-space-sm">
+<div class="bg-on-tertiary-container h-full rounded-full" style="width: 88%;"></div>
+</div>
+<button class="w-full bg-surface-container-low hover:bg-surface-container text-on-surface py-2 rounded-lg font-label-sm text-label-sm flex items-center justify-center gap-1 transition-colors" type="button">
+<span>Next → Normalization</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="min-w-[260px] max-w-[260px] bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between flex-shrink-0">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded-full font-bold">CS 307</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">64%</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface line-clamp-1">Computer Networks</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">TCP 3-way Handshake, Sliding Window, and Congestion.</p>
+</div>
+<div class="mt-space-md pt-space-xs">
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden mb-space-sm">
+<div class="bg-secondary h-full rounded-full" style="width: 64%;"></div>
+</div>
+<button class="w-full bg-surface-container-low hover:bg-surface-container text-on-surface py-2 rounded-lg font-label-sm text-label-sm flex items-center justify-center gap-1 transition-colors" type="button">
+<span>Next → TCP Handshake</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="px-gutter-mobile mt-space-lg">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Weekly Study Velocity</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Avg. 2.6 hrs/day · Target: 3.0 hrs</p>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded-md">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface">Target Line</span>
+</div>
+</div>
+<div class="w-full mt-space-md">
+<div class="flex items-end justify-between h-32 pt-4 pb-2 px-1 relative">
+<div class="absolute inset-x-0 top-10 border-b border-dashed border-outline-variant/60 pointer-events-none flex justify-end">
+<span class="font-code-sm text-code-sm text-on-surface-variant -mt-4 bg-surface-container-lowest px-1">3.0h target</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 z-10">
+<div class="w-7 bg-surface-container-high rounded-t-md h-20 transition-all hover:bg-primary"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">M</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 z-10">
+<div class="w-7 bg-surface-container-high rounded-t-md h-24 transition-all hover:bg-primary"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">T</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 z-10">
+<div class="w-7 bg-surface-container-high rounded-t-md h-16 transition-all hover:bg-primary"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">W</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 z-10">
+<div class="w-7 bg-surface-container-high rounded-t-md h-28 transition-all hover:bg-primary"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">T</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 z-10">
+<div class="w-7 bg-surface-container-high rounded-t-md h-22 transition-all hover:bg-primary"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">F</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 z-10">
+<div class="w-7 bg-primary rounded-t-md h-24 relative group">
+<span class="absolute -top-7 left-1/2 transform -translate-x-1/2 bg-primary text-on-primary text-[10px] py-0.5 px-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">2h 15m</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Today</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 z-10">
+<div class="w-7 bg-surface-container rounded-t-md h-4"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">S</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="px-gutter-mobile mt-space-lg mb-space-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">warning</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Weak Topics · Targeted Focus</h2>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col min-w-0 pr-2">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Thermodynamics (Cycle Laws)</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<div class="w-16 bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 48%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-error font-medium">48% Mastery</span>
+</div>
+</div>
+<button class="bg-secondary-fixed/50 hover:bg-secondary-fixed text-on-secondary-container px-3 py-1.5 rounded-lg font-label-sm text-label-sm font-semibold flex-shrink-0 transition-colors" type="button">
+          Practice Quiz
+        </button>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col min-w-0 pr-2">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Transactions &amp; Concurrency</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<div class="w-16 bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 63%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">63% Mastery</span>
+</div>
+</div>
+<button class="bg-surface-container-low hover:bg-surface-container text-on-surface px-3 py-1.5 rounded-lg font-label-sm text-label-sm font-semibold flex items-center gap-1 flex-shrink-0 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">auto_awesome</span>
+<span>Ask AI Tutor</span>
+</button>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col min-w-0 pr-2">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Memory Management &amp; Segmentation</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<div class="w-16 bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-on-tertiary-container h-full rounded-full" style="width: 69%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">69% Mastery</span>
+</div>
+</div>
+<button class="bg-surface-container-low hover:bg-surface-container text-on-surface px-3 py-1.5 rounded-lg font-label-sm text-label-sm font-semibold flex items-center gap-1 flex-shrink-0 transition-colors" type="button">
+<span>Review Cards</span>
+</button>
+</div>
+</div>
+</div>
+<div class="px-gutter-mobile my-space-sm">
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-secondary-container/20 flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<input class="w-full bg-transparent border-none outline-none font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant" placeholder="Ask Growly anything... (e.g. explain Semaphore)" type="text"/>
+<button aria-label="Submit query" class="w-8 h-8 rounded-lg bg-primary text-on-primary flex items-center justify-center flex-shrink-0 transition-transform active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const revBtn = document.getElementById('start-revision-btn');
+    if (revBtn) {
+      revBtn.addEventListener('click', function() {
+        this.classList.add('scale-95');
+        setTimeout(() => this.classList.remove('scale-95'), 150);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/80 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-semibold"><div class="flex items-center justify-around h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] transition-colors text-primary font-semibold" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-label-sm">Home</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="my-learning" href="#"><span class="material-symbols-outlined text-[22px]">menu_book</span><span class="font-label-sm text-label-sm">Library</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface relative group transition-colors" data-path="ai-tutor" href="#"><div class="w-10 h-10 rounded-xl bg-secondary-container/20 flex items-center justify-center text-secondary shadow-[0_0_12px_rgba(254,166,25,0.35)]"><span class="material-symbols-outlined text-[22px]">auto_awesome</span></div><span class="font-label-sm text-label-sm text-secondary font-bold mt-0.5">Copilot</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="smart-revision" href="#"><span class="material-symbols-outlined text-[22px]">style</span><span class="font-label-sm text-label-sm">Revision</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="learning-analytics" href="#"><span class="material-symbols-outlined text-[22px]">insights</span><span class="font-label-sm text-label-sm">Analytics</span></a></div></nav></body></html>

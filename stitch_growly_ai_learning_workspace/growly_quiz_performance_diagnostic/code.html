@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f7f9fb;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-fixed": "#131b2e", "tertiary-fixed": "#89f5e7", "on-error": "#ffffff", "surface": "#f7f9fb", "tertiary": "#000000", "on-surface": "#191c1e", "on-tertiary-container": "#0c9488", "inverse-surface": "#2d3133", "on-primary-fixed-variant": "#3f465c", "secondary-fixed-dim": "#ffb95f", "tertiary-fixed-dim": "#6bd8cb", "on-primary": "#ffffff", "secondary": "#855300", "on-secondary-fixed-variant": "#653e00", "outline-variant": "#c6c6cd", "on-error-container": "#93000a", "on-background": "#191c1e", "on-tertiary": "#ffffff", "primary-container": "#131b2e", "secondary-container": "#fea619", "surface-tint": "#565e74", "error-container": "#ffdad6", "surface-bright": "#f7f9fb", "surface-container-lowest": "#ffffff", "on-surface-variant": "#45464d", "on-secondary": "#ffffff", "outline": "#76777d", "surface-container-high": "#e6e8ea", "background": "#f7f9fb", "secondary-fixed": "#ffddb8", "surface-container-highest": "#e0e3e5", "error": "#ba1a1a", "on-primary-container": "#7c839b", "on-tertiary-fixed-variant": "#005049", "primary": "#000000", "surface-dim": "#d8dadc", "tertiary-container": "#00201d", "on-secondary-container": "#684000", "surface-container": "#eceef0", "primary-fixed": "dae2fd", "inverse-on-surface": "#eff1f3", "on-secondary-fixed": "#2a1700", "surface-variant": "#e0e3e5", "on-tertiary-fixed": "#00201d", "primary-fixed-dim": "#bec6e0", "inverse-primary": "#bec6e0", "surface-container-low": "#f2f4f6" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1.5rem", "margin": "2rem", "space-md": "1rem", "margin-mobile": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xl": "2rem", "gutter-mobile": "1rem", "space-xs": "0.25rem" }, fontFamily: { "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "code-sm": ["Space Grotesk"] }, fontSize: { "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "display-lg": ["48px", { "lineHeight": "56px", "fontWeight": "700" }], "headline-xl": ["36px", { "lineHeight": "44px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-xl-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "code-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }] } } } }</script></head><body class="bg-surface text-on-surface flex flex-col min-h-screen antialiased selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Exit Quiz" class="w-11 h-11 min-w-[44px] min-h-[44px] rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container active:scale-95 transition-transform" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[20px]">close</span></button><img alt="Growly edtech logo, minimalist modern emblem of an open knowledge book seamlessly morphing into a rising geometric sprout or glowing intellect node, deep navy blue and warm golden saffron accent, vector flat icon symbol" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XpZbL0Yv1d-T25dDldGPoTxi8m-nL5QrkWzztNn3E_f_A6P1h06cR1vgDrrHgG23cN1STymqZ0ay2G5ioDz2nE4PfHoh1eKeJY1I9gq9og3D_J1WQbJyMWsN-1cVF2M9G_G-dtvV020iS_D7KhKj2FO04dnCxi4wIMcUZWIqhNaTqWmr3N6O8bzj-FYmofmdqGnnHqPSxBD7A_VPRI120qyEDs36iR3ct5XpJHIUbDVi7bRIWDY8PvgWM"/><div class="flex flex-col ml-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Growly Focus</span><h1 class="font-headline-sm text-headline-sm text-on-surface leading-tight truncate max-w-[160px]">Quiz Performance &amp; Diagnostic</h1></div></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 px-margin-mobile pb-safe bg-surface"><div class="flex flex-col w-full pb-10 space-y-5">
+<!-- Celebration & Context Header -->
+<div class="flex flex-col space-y-1">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">verified</span> Diagnostic Completed
+      </span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">OS-302</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Quiz Diagnostic &amp; Mastery Report</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+      Operating Systems · Unit 3: Deadlocks &amp; Process Synchronization · Completed just now
+    </p>
+</div>
+<!-- Big Hero Score Card -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm transition-all duration-300">
+<div class="absolute -top-12 -right-12 w-40 h-40 rounded-full bg-secondary-container/15 blur-2xl pointer-events-none"></div>
+<div class="absolute -bottom-10 -left-10 w-32 h-32 rounded-full bg-tertiary-fixed/30 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-center sm:flex-row sm:items-center justify-between gap-space-md">
+<!-- Left side: Gauge ring & Big score numbers -->
+<div class="flex items-center gap-space-md w-full sm:w-auto">
+<div class="relative flex items-center justify-center w-24 h-24 shrink-0">
+<svg class="w-24 h-24 -rotate-90 transform" viewbox="0 0 100 100">
+<circle cx="50" cy="50" fill="transparent" r="40" stroke="#eceef0" stroke-width="8"></circle>
+<circle class="transition-all duration-1000 ease-out" cx="50" cy="50" fill="transparent" r="40" stroke="#fea619" stroke-dasharray="251.2" stroke-dashoffset="33.4" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center">
+<span class="font-headline-lg text-headline-lg leading-none text-on-surface tracking-tighter">87<span class="font-label-sm text-label-sm text-secondary font-bold">%</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase mt-0.5">Mastery</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-baseline gap-1">
+<span class="font-display-lg-mobile text-display-lg-mobile font-bold text-on-surface tracking-tight">78</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">/ 90</span>
+<span class="ml-2 font-label-md text-label-md text-on-tertiary-container font-semibold">Points</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-secondary">target</span> Strong Proficiency
+            </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Exam Predicted Readiness: <strong class="text-on-surface font-semibold">84%</strong></span>
+</div>
+</div>
+<!-- Streak & XP Micro-Pill Panel -->
+<div class="w-full sm:w-auto flex sm:flex-col justify-between items-center sm:items-end gap-2 pt-2 sm:pt-0">
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">bolt</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">+120 XP</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">earned</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-secondary-fixed/50 text-on-secondary-fixed shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">local_fire_department</span>
+<span class="font-label-md text-label-md font-bold">12 Days</span>
+<span class="font-body-sm text-body-sm text-on-secondary-fixed-variant">Streak kept</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Core Statistics Grid (2x2 layout) -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Stat 1: Accuracy -->
+<div class="flex flex-col justify-between p-3.5 rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Accuracy</span>
+<span class="material-symbols-outlined text-[18px] text-on-tertiary-container">done_all</span>
+</div>
+<div class="mt-2">
+<div class="font-headline-sm text-headline-sm text-on-surface tracking-tight">13 / 15</div>
+<div class="flex items-center gap-1 mt-1 text-on-tertiary-container">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span class="font-label-sm text-label-sm font-semibold">+14% vs cohort</span>
+</div>
+</div>
+</div>
+<!-- Stat 2: Time Efficiency -->
+<div class="flex flex-col justify-between p-3.5 rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Time Taken</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">timer</span>
+</div>
+<div class="mt-2">
+<div class="font-headline-sm text-headline-sm text-on-surface tracking-tight">11m 42s</div>
+<div class="flex items-center gap-1 mt-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-secondary">speed</span>
+<span class="font-label-sm text-label-sm">46s / Q · Fast Pace</span>
+</div>
+</div>
+</div>
+<!-- Stat 3: Adaptive Difficulty -->
+<div class="flex flex-col justify-between p-3.5 rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Adaptive Level</span>
+<span class="material-symbols-outlined text-[18px] text-primary">auto_graph</span>
+</div>
+<div class="mt-2">
+<div class="font-headline-sm text-headline-sm text-on-surface tracking-tight">3.8 <span class="font-label-sm text-label-sm text-on-surface-variant">/ 5.0</span></div>
+<div class="flex items-center gap-1 mt-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-primary">military_tech</span>
+<span class="font-label-sm text-label-sm">Peak difficulty reached</span>
+</div>
+</div>
+</div>
+<!-- Stat 4: Memory Decay / FSRS -->
+<div class="flex flex-col justify-between p-3.5 rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">FSRS Retention</span>
+<span class="material-symbols-outlined text-[18px] text-on-tertiary-container">psychology</span>
+</div>
+<div class="mt-2">
+<div class="font-headline-sm text-headline-sm text-on-surface tracking-tight">9 Days</div>
+<div class="flex items-center gap-1 mt-1 text-on-tertiary-container">
+<span class="material-symbols-outlined text-[14px]">event_repeat</span>
+<span class="font-label-sm text-label-sm font-semibold">Decay safe until Oct 18</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Deep Topic & Concept Diagnostic -->
+<div class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Topic Breakdown &amp; Mastery Shifts</h3>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">4 Micro-Concepts</span>
+</div>
+<div class="flex flex-col space-y-2.5">
+<!-- Strong Area 1 -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm space-y-2">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container shrink-0"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Banker's Algorithm &amp; Safety Sequence</span>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-tertiary-fixed/30 text-on-tertiary-container font-label-sm text-label-sm shrink-0">
+            100% (3/3)
+          </span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-on-tertiary-container h-1.5 rounded-full" style="width: 91%"></div>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-body-sm text-body-sm">
+<span>Mastery level: <strong class="text-on-surface">91%</strong></span>
+<span class="text-on-tertiary-container font-label-sm text-label-sm font-semibold">+15% shift</span>
+</div>
+</div>
+<!-- Strong Area 2 -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm space-y-2">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container shrink-0"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Resource Allocation Graphs (RAG)</span>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-tertiary-fixed/30 text-on-tertiary-container font-label-sm text-label-sm shrink-0">
+            100% (4/4)
+          </span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-on-tertiary-container h-1.5 rounded-full" style="width: 95%"></div>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-body-sm text-body-sm">
+<span>Cycle detection mastery</span>
+<span class="text-on-tertiary-container font-label-sm text-label-sm font-semibold">Solidified</span>
+</div>
+</div>
+<!-- Needs Attention 1 -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm space-y-2.5">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Dijkstra's Asymmetric Solution &amp; Starvation</span>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-fixed/50 text-secondary font-label-sm text-label-sm shrink-0">
+            50% (1/2)
+          </span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary-container h-1.5 rounded-full" style="width: 52%"></div>
+</div>
+<div class="flex items-center gap-1.5 p-2 rounded-lg bg-secondary-fixed/30 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary shrink-0">tips_and_updates</span>
+<span class="font-body-sm text-body-sm text-secondary leading-tight">Diagnostic: Confused wait() parameter ordering during edge acquisition</span>
+</div>
+</div>
+<!-- Needs Attention 2 -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm space-y-2.5">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Deadlock Detection vs Prevention Trade-offs</span>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-fixed/50 text-secondary font-label-sm text-label-sm shrink-0">
+            66% (2/3)
+          </span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary-container h-1.5 rounded-full" style="width: 64%"></div>
+</div>
+<div class="flex items-center gap-1.5 p-2 rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary shrink-0">info</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">Recommendation: Revise Havender's hierarchical ordering conditions</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Intelligent Next Actions Section -->
+<div class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">psychology_alt</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Growly Copilot Recommends</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ranked by Impact</span>
+</div>
+<!-- Action Card 1: High Priority AI Tutor Review -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest to-secondary-fixed/20 p-4 shadow-sm flex flex-col space-y-3">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">smart_toy</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-bold">Walkthrough Missed Questions</span>
+<span class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm">High Impact</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">
+            Engage in a 3-minute Socratic breakdown for Question 4 (Starvation) &amp; Question 9 (Havender's).
+          </p>
+</div>
+</div>
+<button class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:opacity-95 active:scale-98 transition-all" type="button">
+<span>Start Focused AI Review</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Action Card 2: Generate Flashcards -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center shrink-0 text-on-surface">
+<span class="material-symbols-outlined text-[20px]">style</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Generate 6 Precision Flashcards</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Auto-added to Unit 3 Spaced Repetition deck</span>
+</div>
+</div>
+<button class="shrink-0 px-3 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" type="button">
+        Create Cards
+      </button>
+</div>
+<!-- Action Card 3: Spaced Re-test Scheduling -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center shrink-0 text-on-surface">
+<span class="material-symbols-outlined text-[20px]">calendar_clock</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Spaced Calibration Test</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Algorithm recommends: Thursday, 4:00 PM</span>
+</div>
+</div>
+<button class="shrink-0 px-3 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" type="button">
+        Schedule
+      </button>
+</div>
+</div>
+<!-- Bottom Final Action Hub -->
+<div class="flex flex-col space-y-2 pt-2">
+<button class="w-full flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-sm active:scale-98 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">dashboard</span>
+<span>Return to Dashboard</span>
+</button>
+<button class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">list_alt</span>
+<span>Review All 15 Explanations (Step-by-Step)</span>
+</button>
+</div>
+</div></main></body></html>
